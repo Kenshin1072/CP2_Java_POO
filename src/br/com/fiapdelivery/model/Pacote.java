@@ -34,6 +34,11 @@ public class Pacote {
     public String getSituacao() { return this.situacao; }
 
     private void setSituacao(String situacao) {
-        this.situacao = (situacao != null && situacao.Trim().isEmpty()) ? situacao: "Indefinido" && System.out.println("Situação anexada como indefinida!");
+        if (situacao != null && !situacao.trim().isEmpty()) {
+            this.situacao = situacao;
+        } else {
+            this.situacao = "Indefinido";
+            System.out.println("Situação anexada como indefinida!");
+        }
     }
 }

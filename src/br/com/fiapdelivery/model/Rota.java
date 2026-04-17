@@ -9,7 +9,7 @@ public class Rota {
         this.veiculoUtilizado = veiculoUtilizado;
     }
 
-    public void envio(Pacote pacote, Veiculo veiculoUtilizado) {
-        System.out.println("Levando pacote" + pacote.codigo + "no veiculo" + veiculoUtilizado.placa);
+    public void envio() {
+        System.out.println("Levando pacote" + pacote.getCodigo() + " no veiculo de placa: " + veiculoUtilizado.getPlaca());
     }
 }

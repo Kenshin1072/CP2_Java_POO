@@ -25,7 +25,7 @@ public class Veiculo {
         return this.capacidade;
     }
 
-    private void setCapacidade(double capacidade) {
+    protected void setCapacidade(double capacidade) {
         this.capacidade = capacidade;
     }
 }
